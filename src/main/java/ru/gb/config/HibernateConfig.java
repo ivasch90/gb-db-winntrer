@@ -21,13 +21,13 @@ import java.util.Properties;
 @Configuration
 @ComponentScan("ru.gb")
 @EnableTransactionManagement
-@PropertySource("classpath:jdbc.properties")
+@PropertySource("jdbc.properties")
 public class HibernateConfig {
     @Value("${driverClassName}")
     private String driverClassName;
     @Value("${url}")
     private String url;
-    @Value("${username}")
+    @Value("${login}")
     private String username;
     @Value("${password}")
     private String password;

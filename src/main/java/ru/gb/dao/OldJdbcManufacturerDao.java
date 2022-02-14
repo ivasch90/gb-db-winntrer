@@ -10,7 +10,7 @@ import java.util.Set;
 public class OldJdbcManufacturerDao implements ManufacturerDao {
 
     private Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:postgresql://localhost:5432/gb_shop");
+        return DriverManager.getConnection("jdbc:postgresql://localhost:5432/gb_shop?user=geek&password=geek");
     }
 
     private void closeConnection(Connection connection) {
